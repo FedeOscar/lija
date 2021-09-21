@@ -17,7 +17,12 @@ ul {
   text-decoration: none;
   width: 0px;
   text-align: center; }
-
+  
+  .section{
+    box-sizing: border-box;
+    
+  }
+  
 .titulo {
   color: black;
   font-size: 50px;
@@ -48,15 +53,12 @@ h3 {
   text-align: center;
   border-top: solid 6px black;
   font-size: 30px;
-  color: black; }
-
-.fotos {
-  width: 350px;
-  height: 350px;
-  padding-left: 65px; }
+  color: black; 
+}
 
 .imagenesinicio {
-  padding-top: 100px; }
+  padding-top: 100px;
+text-align: center; }
 
 #grid {
   background-image: linear-gradient(grey, white); }
@@ -73,7 +75,28 @@ h3 {
   font-family: 'Times New Roman', Times, serif; }
 
 .productos {
-  border-top: solid 6px black; }
+  border-top: solid 6px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 12%;
+}
+.maps {
+  display: flex;
+  justify-content: center;
+}
+.imagenesinicio img{
+  width: 350px;
+  height: 350px;
+}
+.productos1{
+  margin: 3em;
+}
+.productos1 img{
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: auto;
+}
 
 .TRABAJO {
   border-top: solid 6px black;
@@ -83,17 +106,21 @@ h3 {
   font-size: 23px; }
 
 #lorem {
-  font-size: 20px; }
+  font-size: 30px; }
 
 .h4prod {
-  font-size: 20px; }
+  font-size: 25px; }
 
 .loremnt {
-  font-size: 20px; }
+  font-size: 34px; }
 
 .plorem {
   font-size: 20px; }
 
+.fotoquien{
+  display: flex;
+  justify-content: center;
+}
 .sec-footer {
   background: #3b3b3d;
   direction: rtl;
@@ -162,10 +189,45 @@ h3 {
 .snip1472:active,
 .snip1472.hover {
   color: #c0392b; }
-
+  
 .snip1472:hover:after,
 .snip1472:active:after,
 .snip1472.hover:after {
   border-color: #c0392b transparent #c0392b transparent;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg); }
+  @media (min-width:780px) and (max-width:1024px) {
+    .imagenesinicio{
+      text-align: center;
+    }
+    .productos{
+      display: flex;
+      flex-direction: column;
+    }
+    .productos img{
+    display: flex;
+    justify-content: center;
+    }
+    
+    }
+  nav a{font-size: 1.5em;
+    text-align: center;
+  }
+  @media (min-width:480px) and (max-width:780px) {
+    .imagenesinicio{
+      text-align: center;
+    }
+  }
+  @media (min-width:360px) and (max-width:480px) {
+  .productos{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .fotoquien img{
+    width: 100%;
+  }
+  .productos1 img {
+    width: 300px;
+  }
+  }
