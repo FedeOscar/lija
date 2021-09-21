@@ -183,13 +183,14 @@ text-align: center; }
 .snip1472:before,
 .snip1472:after {
   -webkit-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out; }
+  transition: all 0.45s ease-in-out;
+}
 
 .snip1472:hover,
 .snip1472:active,
 .snip1472.hover {
   color: #c0392b; }
-  
+
 .snip1472:hover:after,
 .snip1472:active:after,
 .snip1472.hover:after {
